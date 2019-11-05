@@ -202,9 +202,8 @@ body{
   padding: 15px;
   width: 25%;
   border-radius: 15px;
-  margin: 10px;
-  min-height: 47%;
-  max-height: 50%;
+  margin: 25px;
+  flex: 1;
 }
 
 #projects p{
