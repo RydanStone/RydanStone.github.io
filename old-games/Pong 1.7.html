@@ -3,30 +3,31 @@
 		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 		<meta content="utf-8" http-equiv="encoding">
 		<title>Pong 1.7 by Zach Jensen</title>
+		<link rel="icon" href="images/favicon.ico">
 		<style>
 			body{
 				text-align: center;
-				background-color: #d7fbe8;
+				background-color: #232931;
 			}
 
 			#title{
-				color: #1fab89;
+				color: #eeeeee;
 				margin-top: 15px;
 			}
 
 			#gameCanvas{
 				display: inline-block;
-				border: 15px solid #1fab89;
+				border: 15px solid #4ecca3;
 				border-radius: 10px;
 			}
 
 			#game-info{
 				margin: 5% auto 0 auto;
 				width: 30%;
-				border: 10px solid #1fab89;
+				border: 10px solid #4ecca3;
 				border-radius: 10px;
-				background-color: #9df3c4;
-				color: #1fab89;
+				background-color: #393e46;
+				color: #eeeeee;
 				font-family: Verdana;
 				font-size: 1.15rem;
 			}
@@ -66,7 +67,7 @@
 			const WIN = 5;
 			const FRAMES_PER_SECOND = 120;
 
-			const PADDLE_BALL_COLOR = "rgb(31, 171, 137)";
+			const PADDLE_BALL_COLOR = "rgb(78, 204, 163)";
 
 			var startGame = true;
 			var showingWinScreen = false;
@@ -211,21 +212,21 @@
 
 			function drawNet(){
 				for(var i = 0; i < canvas.height; i += 44.6){
-					colorRect(canvas.width / 2 - 1, i, 2, 20, 'rgb(98, 210, 162)');
+					colorRect(canvas.width / 2 - 1, i, 2, 20, 'rgb(255, 117, 26)');
 				}
 			}
 
 			function drawEverything() {
 				//Draws a black background across the entire canvas
-				colorRect(0, 0, canvas.width, canvas.height, 'rgb(157, 243, 196)');
+				colorRect(0, 0, canvas.width, canvas.height, 'rgb(57, 62, 70)');
 				if(startGame){
-					canvasContext.fillStyle = 'rgb(31, 171, 137)';
+					canvasContext.fillStyle = 'rgb(238, 238, 238)';
 					canvasContext.font = "30px Arial"
 					canvasContext.fillText("Click to start the game", canvas.width / 3, 300);
 					return;
 				}
 				if(showingWinScreen){
-					canvasContext.fillStyle = 'rgb(31, 171, 137)';
+					canvasContext.fillStyle = 'rgb(238, 238, 238)';
 					if(player1Score > player2Score){
 						canvasContext.fillText("You won and are the Champion", canvas.width / 4, 250);
 					}else if(player2Score > player1Score){
@@ -244,6 +245,7 @@
 				colorCircle(ballX, ballY, 10, PADDLE_BALL_COLOR);
 				//Made font bigger on 9/14
 				canvasContext.font = "30px Arial"
+				canvasContext.fillStyle = 'rgb(238, 238, 238)';
 				canvasContext.fillText(player1Score, 100, 100);
 				canvasContext.fillText(player2Score, canvas.width - 100, 100);
 			}
