@@ -5,12 +5,6 @@ body{
   --color-secondary-dark: #393e46;
 }
 
-@media only screen and (orientation: portrait) {
-  body{
-    font-size: 2rem;
-  }
-}
-
 .nightmode {
   --color-primary-light: #393e46;
   --color-primary-dark: #eeeeee;
