@@ -201,9 +201,10 @@ body{
   background-color: var(--color-primary-dark);
   padding: 15px;
   width: 25%;
-  height: 47%;
   border-radius: 15px;
   margin: 10px;
+  min-height: 47%;
+  max-height: 50%;
 }
 
 #projects p{
