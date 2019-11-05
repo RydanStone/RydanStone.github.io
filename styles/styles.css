@@ -140,12 +140,20 @@ body{
 #divider{
   height: 65px;
   width: 75%;
-  background-color: #4ecca3;
+  background: linear-gradient(90deg, #00ffff, #ff8080);
+  background-size: 400% 400%;
   border-radius: 50px 15px 50px 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 100px;
+  animation: divider-color-scroll 14s ease infinite;
+}
+
+@keyframes divider-color-scroll {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
 #inside-divider{
