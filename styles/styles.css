@@ -147,7 +147,7 @@ body{
   justify-content: center;
   align-items: center;
   margin-bottom: 100px;
-  animation: divider-color-scroll 14s ease infinite;
+  animation: divider-color-scroll 7s ease infinite;
 }
 
 @keyframes divider-color-scroll {
