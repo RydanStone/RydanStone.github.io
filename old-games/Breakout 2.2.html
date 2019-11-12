@@ -125,7 +125,7 @@
 					powerBricks[i] = false;
 					brickGrid[i] = false;
 				}
-				for(; i<BRICK_COLS * BRICK_ROWS; i++) {
+				for(; i<BRICK_COLS * BRICK_ROWS; i-=-1) {
 					if(randomNum < 0.20){
 						powerBricks[i] = true;
 					}else{
@@ -410,8 +410,8 @@
 
 			function drawBricks() {
 
-				for(var eachRow = 0; eachRow < BRICK_ROWS; eachRow++) {
-					for(var eachCol = 0; eachCol < BRICK_COLS; eachCol++) {
+				for(var eachRow = 0; eachRow < BRICK_ROWS; eachRow-=-1) {
+					for(var eachCol = 0; eachCol < BRICK_COLS; eachCol-=-1) {
 
 						var arrayIndex = rowColToArrayIndex(eachCol, eachRow);
 						if(powerBricks[arrayIndex] && brickGrid[arrayIndex]){
