@@ -43,8 +43,8 @@
 		<script>
 			var ballX = 75;
 			var ballY = 75;
-			var ballSpeedX = 5;
-			var ballSpeedY = 7;
+			var ballSpeedX = 2.5;
+			var ballSpeedY = 3.5;
 			var ballColorNormal = 'rgb(255, 117, 26)';
 			var ballColorSpeed = "rgb(0, 230, 0)";
 			var numBalls = 1;
@@ -53,8 +53,8 @@
 			var ballTwoSpeedX;
 			var ballTwoSpeedY;
 
-			var framesSinceSpeed = 90;
-			var framesSinceHealth = 90;
+			var framesSinceSpeed = 180;
+			var framesSinceHealth = 180;
 
 			const BRICK_W = 50;
 			const BRICK_H = 20;
@@ -76,6 +76,8 @@
 
 			var mouseX = 0;
 			var mouseY = 0;
+
+			const FRAMES_PER_SECOND = 60;
 
 			const MAX_LIVES = 3;
 			var lives = MAX_LIVES;
@@ -141,8 +143,7 @@
 				canvas = document.getElementById('gameCanvas');
 				canvasContext = canvas.getContext('2d');
 
-				var framesPerSecond = 30;
-				setInterval(updateAll, 1000/framesPerSecond);
+				setInterval(updateAll, 1000/FRAMES_PER_SECOND);
 
 				canvas.addEventListener('mousedown', handleMouseClick);
 				canvas.addEventListener('mousemove', updateMousePos);
@@ -227,15 +228,15 @@
 					framesSinceSpeed = 0;
 					//rgb(152, 230, 152)
 					if(ballSpeedY > 0){
-						ballSpeedY+= 0.5;
+						ballSpeedY+= 0.25;
 					}else{
-						ballSpeedY-= 0.5;
+						ballSpeedY-= 0.25;
 					}
 
 					if(ballTwoSpeedY > 0){
-						ballTwoSpeedY+= 0.5;
+						ballTwoSpeedY+= 0.25;
 					}else{
-						ballTwoSpeedY-= 0.5;
+						ballTwoSpeedY-= 0.25;
 					}
 				}
 			}
