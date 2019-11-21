@@ -11,6 +11,12 @@ body{
   --color-secondary-dark: #232931;
 }
 
+@media screen and (max-width: 1200px) {
+  .intro-text{
+    font-size: 0.5rem;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 8px;
   background-color: #393e46;
