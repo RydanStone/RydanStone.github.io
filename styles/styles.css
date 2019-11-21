@@ -26,17 +26,14 @@ body{
 }
 
 .nav-bar{
-  position: fixed;
+  position: fixed !important;
   width: 100%;
-  display: flex;
-  justify-content: flex-end;
   background-color: var(--color-secondary-dark);
   z-index: 1;
 }
 
 .nav-list{
   list-style: none;
-  display: flex;
   margin-right: 2rem;
 }
 
