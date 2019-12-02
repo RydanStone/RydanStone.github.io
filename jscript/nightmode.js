@@ -7,7 +7,6 @@ if(localStorage.getItem('nm') == 'on'){
   document.body.classList.toggle('nightmode');
 }
 
-
 document.querySelector('[data-switch-contrast]').addEventListener('click', function() {
   document.body.classList.toggle('nightmode');
   if(localStorage.getItem('nm') == 'on'){
