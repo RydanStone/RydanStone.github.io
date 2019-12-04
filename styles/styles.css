@@ -1,3 +1,4 @@
+/* set margin to 0 and set default colors */
 body{
   margin: 0px;
   --color-primary-light: #eeeeee;
@@ -5,10 +6,16 @@ body{
   --color-secondary-dark: #393e46;
 }
 
+/* sets nightmode colors */
 .nightmode {
   --color-primary-light: #393e46;
   --color-primary-dark: #eeeeee;
   --color-secondary-dark: #232931;
+}
+
+/* Sets special color for credit link while in nightmode */
+.nightmode #credit a{
+  color: #0066ff;
 }
 
 @media screen and (max-width: 1200px) {
@@ -17,6 +24,7 @@ body{
   }
 }
 
+/* creates custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
   background-color: #393e46;
@@ -31,6 +39,7 @@ body{
   background: #2e9e79;
 }
 
+/* custom navbar coloring */
 .nav-bar{
   position: fixed !important;
   width: 100%;
@@ -58,6 +67,7 @@ body{
   color: #232931;
 }
 
+/* style nightmode toggle button */
 #night-mode-button{
   width: 10vmin;
   height: 10vmin;
@@ -73,6 +83,7 @@ body{
   height: 8vmin;
 }
 
+/* Style Intro Section */
 #intro{
   display: flex;
   flex-direction: column;
@@ -83,6 +94,7 @@ body{
   width: 100%;
 }
 
+/* Style Projects Section */
 #projects{
   display: flex;
   flex-direction: row;
@@ -93,6 +105,7 @@ body{
   width: 100%;
 }
 
+/* Style Constact Section */
 #contact{
   display: flex;
   flex-direction: column;
@@ -104,6 +117,7 @@ body{
   text-align: center;
 }
 
+/* Style intro contents */
 #intro-wrapper{
   background: linear-gradient(90deg, #61d1ac, #ff751a);
   background-size: 400% 400%;
@@ -111,7 +125,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: divider-color-scroll 7s ease infinite;
+  animation: color-scroll-anim 7s ease infinite;
   width: 50%;
   height: 50%;
 }
@@ -154,6 +168,7 @@ body{
   right: 50px;
 }
 
+/* Style About Section */
 #about{
   min-height: 100vh;
   display: flex;
@@ -164,6 +179,7 @@ body{
   color: var(--color-primary-dark);
 }
 
+/* Style divider between Intro and About sections */
 #divider{
   height: 65px;
   width: 75%;
@@ -174,10 +190,11 @@ body{
   justify-content: center;
   align-items: center;
   margin-bottom: 100px;
-  animation: divider-color-scroll 7s ease infinite;
+  animation: color-scroll-anim 7s ease infinite;
 }
 
-@keyframes divider-color-scroll {
+/* creates animation used around my intro and for the divider */
+@keyframes color-scroll-anim {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
@@ -190,6 +207,7 @@ body{
     border-radius: 100px 15px 100px 15px;
 }
 
+/* Style About contents */
 #about-title{
   font-size: 1.5rem;
   border-bottom: 3px solid var(--color-primary-dark);
@@ -203,6 +221,7 @@ body{
   font-family: sans-serif;
 }
 
+/* Styles Credit Section */
 #credit{
   height: 5vh;
   background-color: var(--color-primary-light);
@@ -210,10 +229,7 @@ body{
   color: var(--color-primary-dark);
 }
 
-.nightmode #credit a{
-  color: #0066ff;
-}
-
+/* style contact content */
 #contact h1{
   font-size: 1.5rem;
   color: var(--color-primary-dark);
@@ -231,6 +247,7 @@ body{
    margin: 15px;
 }
 
+/* Style projects content */
 #projects div{
   text-align: center;
   background-color: var(--color-primary-dark);
