@@ -4,6 +4,7 @@ body{
   --color-primary-light: #eeeeee;
   --color-primary-dark: #232931;
   --color-secondary-dark: #393e46;
+  background-color: var(--color-primary-dark);
 }
 
 /* sets nightmode colors */
