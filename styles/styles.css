@@ -96,12 +96,10 @@ body{
 
 /* Style Projects Section */
 #projects{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  top: 100px;
   background-color: var(--color-primary-light);
-  height: 100vh;
+  padding: 5%;
   width: 100%;
 }
 
@@ -248,7 +246,7 @@ body{
 }
 
 /* Style projects content */
-#projects div{
+#projects div .col-lg{
   text-align: center;
   background-color: var(--color-primary-dark);
   padding: 15px;
