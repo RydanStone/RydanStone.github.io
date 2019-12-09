@@ -1,3 +1,10 @@
+/* sets nightmode colors */
+.nightmode {
+  --color-primary-light: #393e46;
+  --color-primary-dark: #eeeeee;
+  --color-secondary-dark: #232931;
+}
+
 /* set margin to 0 and set default colors */
 body{
   margin: 0px;
@@ -5,13 +12,6 @@ body{
   --color-primary-dark: #232931;
   --color-secondary-dark: #393e46;
   background-color: var(--color-primary-dark);
-}
-
-/* sets nightmode colors */
-.nightmode {
-  --color-primary-light: #393e46;
-  --color-primary-dark: #eeeeee;
-  --color-secondary-dark: #232931;
 }
 
 /* Sets special color for credit link while in nightmode */
@@ -103,6 +103,8 @@ body{
   background-color: var(--color-primary-light);
   padding: 5%;
   width: 100%;
+  text-align: center;
+  min-height: 100vh;
 }
 
 /* Style Constact Section */
@@ -248,14 +250,13 @@ body{
 }
 
 /* Style projects content */
-#projects div .col-lg{
-  text-align: center;
+#projects div .col-lg-6{
+  display: inline-block;
   background-color: var(--color-primary-dark);
   padding: 15px;
   width: 25%;
   border-radius: 15px;
   margin: 25px;
-  flex: 1;
 }
 
 #projects p{
