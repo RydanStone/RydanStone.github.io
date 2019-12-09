@@ -7,7 +7,6 @@
 
 /* set margin to 0 and set default colors */
 body{
-  margin: 0px;
   --color-primary-light: #eeeeee;
   --color-primary-dark: #232931;
   --color-secondary-dark: #393e46;
@@ -101,9 +100,7 @@ body{
 /* Style Projects Section */
 #projects{
   background-color: var(--color-primary-light);
-  padding: 5%;
   width: 100%;
-  text-align: center;
   min-height: 100vh;
 }
 
@@ -250,13 +247,16 @@ body{
 }
 
 /* Style projects content */
-#projects div .col-lg-6{
-  display: inline-block;
-  background-color: var(--color-primary-dark);
+#projects .col-md-6{
   padding: 15px;
-  width: 25%;
+}
+
+.project-blocks {
+  background-color: var(--color-primary-dark);
+  padding: 20px;
   border-radius: 15px;
-  margin: 25px;
+  text-align: center;
+  height: 100%;
 }
 
 #projects p{
