@@ -1,0 +1,47 @@
+body{
+  margin: 0;
+  text-align: center;
+  background-color: #8f2821;
+}
+
+h1{
+  padding: 25px;
+  color: white;
+  font-family: Fondamento, cursive;
+}
+
+input{
+  width: 50px;
+}
+
+.header-container{
+
+}
+
+#output-div{
+  width: 50%;
+  outline: solid 2px #555;
+  display: inline-block;
+  height: 250px;
+  width: 200px;
+  background-color: #BBB;
+  position: relative;
+  top: 15px;
+}
+
+.row{
+  margin: 50px 0;
+}
+
+#output-sum{
+  font-size: 2.25rem;
+  margin: 20% 0;
+}
+
+#output-rolls{
+  color: #666;
+}
+
+#roll-request{
+  font-size: 1.25rem;
+}

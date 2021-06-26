@@ -1,0 +1,31 @@
+@font-face{
+  font-family: 'TeX-Gyre-Adventor';
+  src: url('web fonts/texgyreadventor_regular_macroman/texgyreadventor-regular-webfont.woff');
+}
+
+body{
+  background-color: #343a40!important;
+}
+
+.perk-icon{
+  height: 5vw;
+}
+
+.header{
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Tex-Gyre-Adventor', sans-serif;
+  border-bottom: 2px solid #f8f9fa;
+}
+
+.nav{
+  border-bottom: .5rem;
+  border-style: solid;
+  border-color: #D3D3D3;
+}
+
+.home-info{
+  font-family: 'TeX-Gyre-Adventor', sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}

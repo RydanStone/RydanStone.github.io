@@ -252,12 +252,25 @@ body{
   padding: 15px;
 }
 
+.project-headers {
+  color: var(--color-primary-dark);
+  text-align: center;
+  width: 10em;
+  padding: .5em;
+  border-bottom: 3px solid var(--color-primary-dark);
+}
+
 .project-blocks {
   background-color: var(--color-primary-dark);
   padding: 20px;
   border-radius: 15px;
   text-align: center;
   height: 100%;
+}
+
+.wip-img {
+  height: 25em;
+  width: 40em;
 }
 
 #projects p{
