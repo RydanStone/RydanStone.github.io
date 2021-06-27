@@ -215,7 +215,8 @@ body{
 }
 
 #centered-text{
-  width: 50%;
+  margin: 10px;
+  width: 55%;
   text-align: left;
   font-size: 1.05rem;
   font-family: sans-serif;
